@@ -11,8 +11,6 @@ postmerge:
     type: <commit|time>
 premerge:
   - "./test/**/*.spec.ts"
-stability:
-  consecutive_runs: 5
 prerun:
   - npm ci
 postrun:
