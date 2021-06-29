@@ -1,10 +1,5 @@
 ---
 framework: mocha
-docker:
-  auth:
-    password: $DOCKERHUB_PASSWORD12
-    username: mydockerhub-user
-  image: "lambdatest/<language>:<version TAG>"
 modifiers:
   - type: mocha
     config: cnf/mocha.ini
