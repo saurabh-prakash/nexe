@@ -1,8 +1,5 @@
 ---
 framework: mocha
-modifiers:
-  - type: mocha
-    config: cnf/mocha.ini
 postmerge:
   pattern:
     - "./test/**/*.spec.ts"
