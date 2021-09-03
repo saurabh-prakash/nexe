@@ -1,5 +1,5 @@
 ---
-framework: mocha
+framework: jest
 postMerge:
   pattern:
     - "./test/**/*.spec.ts"
