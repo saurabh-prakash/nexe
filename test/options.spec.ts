@@ -9,6 +9,7 @@ describe('options', () => {
     it('should use process.cwd() if nothing is provided', () => {
       const options = normalizeOptions()
       expect(options.cwd).to.equal(process.cwd())
+      expect(1).to.equal(3)
     })
     it('should use the main module in a package directory (if not in a TTY)', () => {
       const options = normalizeOptions()
