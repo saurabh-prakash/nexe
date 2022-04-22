@@ -1,18 +1,15 @@
 ---
 framework: mocha
-blacklist:
-  - "test/options.spec.ts##options##cwd##"
 postMerge:
   pattern:
     - "./test/**/*.spec.ts"
-  strategy:
-    threshold: <5|100s|30m|6h>
-    type: <commit|time>
 preMerge:
   pattern:
     - "./test/**/*.spec.ts"
 preRun:
-  - npm ci
+  command:
+    - npm ci
 postRun:
-  - node --version
+  command:
+    - node --version
 version: 2.0
